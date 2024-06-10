@@ -17,6 +17,9 @@ import {
 
 import { Input } from "@/components/ui/input";
 
+import { toast } from "sonner"
+
+
 const formSchema = z.object({
     fullName: z.string().min(3, { message: "Name must be at least 3 characters" }),
     email: z.string().email({ message: "Invalid email address" }),
@@ -34,6 +37,7 @@ const SubscriptionForm = () => {
     // 2. Define a submit handler.
     function onSubmit(values) {
         console.log(values);
+        toast.success(`${values.fullName} subscribed successfully`);
     }
 
     // 3. Get the status
