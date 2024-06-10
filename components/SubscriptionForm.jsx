@@ -36,6 +36,9 @@ const SubscriptionForm = () => {
         console.log(values);
     }
 
+    // 3. Get the status
+    const { isSubmitting, isValid } = form.formState;
+
     return (
         <Form {...form}>
             <form
@@ -50,6 +53,7 @@ const SubscriptionForm = () => {
                             <FormLabel></FormLabel>
                             <FormControl>
                                 <Input
+                                    disabled={isSubmitting}
                                     placeholder="Enter name"
                                     {...field}/>
                             </FormControl>
@@ -65,6 +69,7 @@ const SubscriptionForm = () => {
                             <FormLabel></FormLabel>
                             <FormControl>
                                 <Input
+                                    disabled={isSubmitting}
                                     type="email"
                                     placeholder="Enter e-mail"
                                     {...field}/>
@@ -73,7 +78,7 @@ const SubscriptionForm = () => {
                         </FormItem>
                     )}
                 />
-                <Button type="submit">Subscribe</Button>
+                <Button disabled={!isValid || isSubmitting} type="submit">Subscribe</Button>
             </form>
         </Form>
     );
