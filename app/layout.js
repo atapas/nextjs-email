@@ -1,3 +1,5 @@
+import { ThemeProvider } from "@/components/theme-provider";
+import { Navbar } from "@/components/navbar";
 import { Inter as FontSans } from "next/font/google"
 import "./globals.css";
 
@@ -22,8 +24,16 @@ export default function RootLayout({ children }) {
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}>
-          <main>{children}</main>
-          <Toaster richColors position="top-center"/>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Navbar />
+            <main>{children}</main>
+          </ThemeProvider>
+          <Toaster richColors position="bottom-right"/>
       </body>
     </html>
   );
