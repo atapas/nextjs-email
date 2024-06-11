@@ -25,7 +25,7 @@ const formSchema = z.object({
     email: z.string().email({ message: "Invalid email address" }),
 });
 
-const SubscriptionForm = () => {
+export const SubscriptionForm = () => {
     // 1. Define your form.
     const form = useForm({
         resolver: zodResolver(formSchema),
@@ -87,5 +87,3 @@ const SubscriptionForm = () => {
         </Form>
     );
 };
-
-export default SubscriptionForm;

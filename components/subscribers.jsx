@@ -7,7 +7,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 
-const Subscribers = () => {
+export const Subscribers = () => {
     return (
         <div className="flex flex-col justify-center items-center my-4">
             <Card>
@@ -25,5 +25,3 @@ const Subscribers = () => {
         </div>
     );
 };
-
-export default Subscribers;
