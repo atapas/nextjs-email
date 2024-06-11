@@ -47,7 +47,7 @@ export const SubscriptionForm = () => {
         <Form {...form}>
             <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="space-y-4 flex flex-col justify-center items-center"
+                className="space-y-4 my-4 flex flex-col items-center"
             >
                 <FormField
                     control={form.control}
@@ -57,6 +57,7 @@ export const SubscriptionForm = () => {
                             <FormLabel></FormLabel>
                             <FormControl>
                                 <Input
+                                    className="w-[350px]"
                                     disabled={isSubmitting}
                                     placeholder="Enter name"
                                     {...field}/>
@@ -73,6 +74,7 @@ export const SubscriptionForm = () => {
                             <FormLabel></FormLabel>
                             <FormControl>
                                 <Input
+                                    className="w-[350px]"
                                     disabled={isSubmitting}
                                     type="email"
                                     placeholder="Enter e-mail"
