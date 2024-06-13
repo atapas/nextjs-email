@@ -2,7 +2,7 @@
 
 Learn how to send email with a server action from Next.js
 
-- The main branch of the repository teaches you how to use shadcn/ui component to build a subscription form and subscribers card.
+- The main branch of the repository teaches you how to use shadcn/ui component to build a subscription form and subscribers card. [Watch this video](https://youtu.be/raKAoh9mWzM) to learn.
 
 
 ## Getting Started
