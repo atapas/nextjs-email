@@ -4,6 +4,17 @@ Learn how to send email with a server action from Next.js
 
 - The main branch of the repository teaches you how to use shadcn/ui component to build a subscription form and subscribers card. [Watch this video](https://youtu.be/raKAoh9mWzM) to learn.
 
+## 🫶 Support
+Liked my work? You can show your support with a STAR(⭐).
+
+### Many Thanks to all the `Stargazers` who have supported this project with stars(⭐)
+
+[Thanks to all stargazers](https://github.com/atapas/nextjs-email/stargazers)
+
+## 🙏 Please Sponsor My Work
+
+> I am an independent educator who creates meaningful projects to teach programming. You can support me further by [sponsoring me on GitHub](https://github.com/sponsors/atapas).
+
 
 ## Getting Started
 
