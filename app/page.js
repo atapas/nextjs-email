@@ -1,5 +1,5 @@
 import { SubscriptionForm } from "@/components/subscription-form";
-import { Subscribers } from "@/components/Subscribers";
+import { Subscribers } from "@/components/subscribers";
 
 export default function Home() {
   return (
